@@ -1,3 +1,135 @@
-.hidden {
+body {
+  background-color: #93a5b8;
+  color: aliceblue;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* main contents */
+
+#wrapper {
+  text-align: center;
+  justify-items: center;
+}
+
+#wrapper-inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  display: -webkit-flex;
+  -webkit-align-item:center;
+  -webkit-justify-content:center;
+}
+
+/* All Input boxs */
+
+input[type=text]{
+  width: 80%;
+  height: 40px;
+  border: 1px solid #2d9fd9;
+  color: #a0d18c;
+  padding-left: 10px;
+
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  }
+  
+input[type=text]:focus {
+   outline: none;
+   border: 1px solid #a0d18c;
+   color: #2d9fd9;
+}
+
+/* others */
+
+.js-weather-status {
+  color: #f55f5f;
+  font-weight: 900;
+}
+
+.js-clock > h1 {
+  font-size: 6rem;
+}
+
+.input-boxs {
+  width: 50%;
+}
+
+.input-boxs > button {
+  background-color: #008CBA; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul > li {
+  text-align: left;
+  margin-left: 50px;
+}
+
+ul > li > button {
+  margin-left: 6px;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  font-size: 1.3rem;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.clicked {
+  color: #7f8c8d;
+}
+
+.form,
+.greetings {
   display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
 }
